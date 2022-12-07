@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://mimicproject.com/code/20cbdab6-ba28-620f-6501-4046e575508a -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="origin-trial" content="AipZcFrgMg9ylKLo57EBO0tGMBmsXqFLzwuJJP20GXbHuST7hB1MuUjHX8j3+wbFQot8LyYvaDmS1rONKHvSzwwAAAB6eyJvcmlnaW4iOiJodHRwczovL21pbWljcHJvamVjdC5jb206NDQzIiwiZmVhdHVyZSI6IlVucmVzdHJpY3RlZFNoYXJlZEFycmF5QnVmZmVyIiwiZXhwaXJ5IjoxNjM5NTI2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <title>MIMIC Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="ember-share-db/config/environment" content="%7B%22modulePrefix%22%3A%22ember-share-db%22%2C%22environment%22%3A%22firebase%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22googleFonts%22%3A%5B%22Karla%3A200%22%2C%22Karla%3A400%22%2C%22Karla%3A500%22%2C%22Karla%3A700%22%2C%22Overpass%20Mono%3A100%22%2C%22Overpass%20Mono%3A400%22%5D%2C%22resizeServiceDefaults%22%3A%7B%22debounceTimeout%22%3A200%2C%22heightSensitive%22%3Atrue%2C%22widthSensitive%22%3Atrue%2C%22injectionFactories%22%3A%5B%22view%22%2C%22component%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-share-db%22%2C%22version%22%3A%22deployed220706.2%2Be15f69c7%22%7D%2C%22contentCollectionName%22%3A%22docs%22%2C%22redirectServerHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%22%2C%22localOrigin%22%3A%22https%3A%2F%2Fmimicproject.com%22%2C%22debugConsole%22%3Afalse%2C%22colabMode%22%3Atrue%2C%22colabWsHost%22%3A%22wss%3A%2F%2Fmimic-colab-server.herokuapp.com%2F%22%2C%22serverHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%22%2C%22wsHost%22%3A%22wss%3A%2F%2Fmimic-238710.appspot.com%22%2C%22oauthHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%2Foauth%22%2C%22emberTracker%22%3A%7B%22analyticsSettings%22%3A%7B%22trackingId%22%3A%22UA-139964903-1%22%7D%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22&#39;none&#39;%22%2C%22script-src%22%3A%22&#39;self&#39;%20&#39;unsafe-inline&#39;%20&#39;unsafe-eval&#39;%22%2C%22font-src%22%3A%22&#39;self&#39;%20fonts.gstatic.com%22%2C%22connect-src%22%3A%22&#39;self&#39;%20wss%3A%2F%2Fmimic-238710.appspot.com%20https%3A%2F%2Fmimic-238710.appspot.com%20wss%3A%2F%2Fmimic-colab-server.herokuapp.com%2F%22%2C%22img-src%22%3A%22&#39;self&#39;%22%2C%22report-uri%22%3A%22&#39;localhost&#39;%22%2C%22style-src%22%3A%22&#39;self&#39;%20&#39;unsafe-inline&#39;%20fonts.googleapis.com%22%2C%22frame-src%22%3A%22&#39;none&#39;%22%7D%2C%22exportApplicationGlobal%22%3Atrue%2C%22ember-websockets%22%3A%7B%22socketIO%22%3Afalse%7D%7D">
+<link href="./week1_files/css" rel="stylesheet" type="text/css" media="all">
+
+    <link integrity="" rel="stylesheet" href="./week1_files/vendor.css">
+    <link integrity="" rel="stylesheet" href="./week1_files/ember-share-db.css">
+    <meta name="author" content="Louis McCallum">
+    <meta name="description" content="MIMIC is a web platform for the artistic exploration of musical machine learning, machine listening and creative AI.">
+    <meta name="twitter:title" content="MIMIC Creative AI Platform">
+    <meta property="og:image" content="https://mimicproject.com/images/logo-animation-cropped.gif">
+    <meta property="og:description" content="MIMIC is a web platform for the artistic exploration of musical machine learning, machine listening and creative AI.">
+    <meta property="og:title" content="MIMIC Creative AI Platform">
+    <meta property="og:url" content="https://mimicproject.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="”robots”" content="index, follow">
+    
+  </head>
+  <body class="ember-application">
+    <script async="" src="./week1_files/analytics.js.下载"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-139964903-1');</script>
+
+    <script src="./week1_files/vendor.js.下载"></script>
+    <script src="./week1_files/ember-share-db.js.下载"></script>
+
+    <div id="ember-bootstrap-wormhole"></div>
+  
+
+<div class="ember-view" id="ember252"><div id="main-site-container" style="padding-left: 8%; padding-right: 8%;">
+  <div id="ember259" class="ember-view"><div id="mimic-navbar" class="limited-width-container" style="display: block;">
+<img src="./week1_files/logo-animation-cropped.gif" alt="main logo" id="main-logo" _mstalt="7487220" style="display: none;">
+<ul id="ember260" class="nav nav-pills ember-view"><li id="ember429" class="dropdown ember-view">  <a href="https://mimicproject.com/code/20cbdab6-ba28-620f-6501-4046e575508a#" aria-expanded="false" id="ember430" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1"> about </font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember432" class="dropdown ember-view">    <a href="https://mimicproject.com/code/20cbdab6-ba28-620f-6501-4046e575508a#" aria-expanded="false" id="ember433" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1"> explore </font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember435" class="dropdown ember-view">    <a href="https://mimicproject.com/code/20cbdab6-ba28-620f-6501-4046e575508a#" aria-expanded="false" id="ember436" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1"> learn </font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember438" class="dropdown ember-view">      <a href="https://mimicproject.com/code/20cbdab6-ba28-620f-6501-4046e575508a#" aria-expanded="false" id="ember439" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1">my projects </font><span class="caret"></span></a>
+<!---->
+<!----></li>
+</ul>  <div id="login-container" style="top: 20px;">
+    <div style="float:right;" class="tooltip">
+      <a id="login-button" class="navbar-btn navbar-right pull-right" data-ember-action="" data-ember-action-273="273">log out</a>
+      <span class="tooltiptext">logged in as Qingyue</span>
+    </div>
+  </div>
+</div>
+</div>
+  <div>
+    <div id="document-container">
+  <header>
+  <div id="code-header-container" class="limited-width-container">
+  <h4><span></span></h4>
+  <div id="doc-title-container">
+        <span id="doc-title" class="label label-default" role="button" tabindex="0" for="doc-name" data-ember-action="" data-ember-action-18634="18634">Homework 1 by Qingyue</span>
+    <div id="doc-controls-container">
+      <div id="render-doc-true">
+        </div>
+          <div id="transport-container">
+            <div class="tooltip col-2">
+              <button aria-label="Render Code" id="code-play-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="11687871"><i class="glyphicon glyphicon-pause"></i> 
+</button>
+              <span class="tooltiptext">Render Code</span>
+            </div>
+              <div class="tooltip">
+                  <button aria-label="hide assets" id="ember441" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="13918762"><i class="glyphicon glyphicon-chevron-up"></i> 
+</button>
+                <span class="tooltiptext">Add Files to Use</span>
+              </div>
+              <div class="tooltip">
+                <div class="dropdown">
+                  <button aria-label="add library" id="add-library-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="7594600"><i class="glyphicon glyphicon-briefcase"></i> 
+</button>
+                 <div id="myDropdown" class="dropdown-content">
+                    <button id="ember442" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">MMLL</font>
+</button>
+                    <button id="ember443" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">RapidLib</font>
+</button>
+                    <button id="ember444" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">Learner.js</font>
+</button>
+                    <button id="ember445" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">Maxi Instrument</font>
+</button>
+                    <button id="ember446" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">MIMIC Samples</font>
+</button>
+                    <button id="ember447" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">maximilian.js</font>
+</button>
+                    <button id="ember448" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">EvoLib</font>
+</button>
+                    <button id="ember449" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">Nexus</font>
+</button>
+                    <button id="ember450" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">Processing</font>
+</button>
+                    <button id="ember451" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">p5</font>
+</button>
+                    <button id="ember452" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">SoundJS</font>
+</button>
+                    <button id="ember453" class="library-btn btn btn-default ember-view" type="button"><!----><font _mstmutation="1">Marked</font>
+</button>
+                 </div>
+                </div>
+                <span class="tooltiptext">Add libraries</span>
+              </div>
+            <div class="tooltip">
+                <button aria-label="hide settings" id="settings-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="15496442"><i class="glyphicon glyphicon-chevron-up"></i> 
+</button>
+              <span class="tooltiptext">Show Document Settings</span>
+            </div>
+            <div class="tooltip">
+                <button aria-label="show Recording" id="ember454" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="13521625"><i class="glyphicon glyphicon-record"></i> 
+</button>
+              <span class="tooltiptext">Recording Options</span>
+            </div>
+            <div class="tooltip col-2">
+              <div id="ember455" class="inline-view ember-view"><button aria-label="download document" id="ember456" class="download-button clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="12153258"><i class="glyphicon glyphicon-download-alt"></i> 
+</button>
+</div>
+              <span class="tooltiptext">Download Project as Zip</span>
+            </div>
+            <div class="tooltip col-2">
+              <button aria-label="full screen" id="ember457" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="7179497"><i class="glyphicon glyphicon-fullscreen"></i> 
+</button>
+              <span class="tooltiptext">Enter Fullscreen</span>
+            </div>
+              <div class="tooltip col-2">
+                <button aria-label="delete document" id="code-delete-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="12432121"><i class="glyphicon glyphicon-remove"></i> 
+</button>
+                <span class="tooltiptext">Delete Document</span>
+              </div>
+          </div>
+    </div>
+  </div>
+<!----><!---->  <div id="settings-container">
+      <div class="tooltip">
+        <button aria-label="fork document" id="ember394" class="clear-text-btn btn btn-default ember-view" type="button" _mstaria-label="10656451"><!----><font _mstmutation="1">FORK</font>
+</button>
+        <span class="tooltiptext">Make Your Own Copy</span>
+      </div>
+      <div class="tooltip">
+        <button aria-label="flag document" id="ember395" class="clear-text-btn btn btn-default ember-view" type="button" _mstaria-label="12657398"><!----><font _mstmutation="1">FLAG</font>
+</button>
+        <span class="tooltiptext">Report as Inappropriate</span>
+      </div>
+      <div class="tooltip">
+        <label class="doc-checkbox" for="privacyCheckbox">PRIVATE</label>
+        <input id="privacyCheckbox" class="ember-checkbox ember-view" type="checkbox">
+        <span class="tooltiptext">Other users can discover</span>
+      </div>
+      <div class="tooltip">
+        <label class="doc-checkbox" for="readOnlyCheckbox">READ ONLY</label>
+        <input id="readOnlyCheckbox" class="ember-checkbox ember-view" type="checkbox">
+        <span class="tooltiptext">WARNING! Other users can edit your code</span>
+      </div>
+      <div class="tooltip">
+        <label class="doc-checkbox" for="playCheckbox">DONT PLAY ON OPEN</label>
+        <input id="ember396" class="ember-checkbox ember-view" type="checkbox">
+        <span class="tooltiptext">Dont play on open</span>
+      </div>
+      <div class="tooltip">
+        <label class="doc-checkbox" id="colab-checkbox" for="colabCheckbox">COLLABORATIVE?</label>
+        <input id="ember397" class="ember-checkbox ember-view" type="checkbox">
+        <span class="tooltiptext">COLLABORATIVE EDITTING</span>
+      </div>
+      <div class="tooltip">
+        <label class="doc-checkbox" for="autoRenderCheckbox">AUTO RENDER</label>
+        <input id="autoRenderCheckbox" class="ember-checkbox ember-view" type="checkbox">
+        <span class="tooltiptext">Render Code Whilst Typing</span>
+      </div>
+  </div>
+    <div class="file-upload-container">
+         <div id="uploaded-assets-container" style="background-color: inherit;">
+<!---->        </div>
+      <div id="asset-progress" style="display: none;"></div>
+      <div class="file-upload">
+        <input multiple="" id="ember425" class="ember-view" type="file">
+      </div>
+    </div>
+<!---->  </div>
+
+  </header>
+  <main>
+    <div id="fullscreen">
+          <div id="ember458" class="ember-view"><div id="project-tabs" style="width: 253px;">
+  <table>
+   <tr>
+    <th>
+      <div id="3ea3d7e6-25a6-46d2-4136-e6c9a2810a6a" class="ember-view"><div class="tab-item" id="tab0">
+<button id="ember459" class="tab-btn btn btn-default ember-view" type="button"><!---->  <font _mstmutation="1">Fork of Intro to Three.js</font>
+
+</button><!----></div>
+</div>
+    </th>
+<!---->    <th>
+<button aria-label="add tab" id="ember461" class="add-file-button btn btn-default ember-view" type="button" _mstaria-label="22188946"><i class="glyphicon glyphicon-plus"></i> 
+</button>    </th>
+   </tr>
+ </table>
+</div>
+</div>
+    <div id="main-code-container">
+<!----><!---->        <div id="drag-container" style="right: 222px;">
+            <button aria-label="hide code" id="ember462" class="hide-code-btn btn btn-default ember-view" type="button" _mstaria-label="13426569"><i class="glyphicon glyphicon-menu-right"></i> 
+</button>
+          <div id="drag-button"></div>
+            <div id="playback-container" style="pointer-events: auto;">
+              <!-- <p class = "side-menu-label">code</p> -->
+              <div class="tooltip">
+                <span class="tooltiptext">Re-run code</span>
+<button aria-label="re-run code" id="embedded-run-button" class="clear-btn btn btn-default ember-view" type="button" _mstaria-label="22627696"><i class="glyphicon glyphicon-refresh"></i> 
+</button>            </div>
+              <!-- {{ops-player
+                onSkip = (action 'skipOp')
+                onPlay = (action 'playOps')
+                onRewind = (action 'rewindOps')
+                onPause = (action 'pauseOps')
+                isPlaying = isPlayingOps
+              }} -->
+              <div class="tooltip">
+                <span class="tooltiptext">Bigger Font</span>
+<button id="ember463" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-zoom-in"></i> 
+</button>              </div>
+              <div class="tooltip">
+                <span class="tooltiptext">Smaller Font</span>
+<button id="ember464" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-zoom-out"></i> 
+</button>              </div>
+              <div class="tooltip">
+                <span class="tooltiptext">Toggle Contrast</span>
+<button id="ember465" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-text-background"></i> 
+</button>              </div>
+            </div>
+          </div>
+
+        <div id="ace-container" style="width: 253px; display: inline; visibility: visible;">
+<!----><!---->
+          <div id="ember302" class="ember-view"><textarea id="code-mirror-container" style="display: none;">
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap" style="font-size: 12pt; height: 80vh;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.99149px; left: 43.9915px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 3024px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 15px; left: 45px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="height: 15px; width: 15px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 40px; margin-bottom: -15px; border-right-width: 35px; min-height: 3023px; padding-right: 15px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>62</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 3.99146px; top: 0px; height: 22.8409px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span> = <span class="cm-string">"https://mimicproject.com/libs/nexusUI.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span> = <span class="cm-string">"https://mimicproject.com/libs/maximilian.v.0.1.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://fonts.googleapis.com/css?family=Staatliches"</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span><span class="cm-tag cm-bracket">/&gt;</span> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://mimicproject.com/libs/maximilian-example.css"</span> <span class="cm-tag cm-bracket">/&gt;</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"title"</span><span class="cm-tag cm-bracket">&gt;</span>Maximilian.js Seed<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"subtitle"</span><span class="cm-tag cm-bracket">&gt;</span>This is a starting point for your own projects<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">id</span>=<span class="cm-string">"playButton"</span><span class="cm-tag cm-bracket">&gt;</span>Play<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"oscilloscope"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"spectrogram"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">&lt;!-- Maximilian code goes here --&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">id</span> = <span class="cm-string">"myAudioScript"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">osc1</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Maximilian</span>.<span class="cm-property">maxiOsc</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">osc2</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Maximilian</span>.<span class="cm-property">maxiOsc</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">osc3</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Maximilian</span>.<span class="cm-property">maxiOsc</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">osc4</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Maximilian</span>.<span class="cm-property">maxiOsc</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 3023px;"></div><div class="CodeMirror-gutters" style="height: 3058px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div><label style="color:transparent;" for="code-mirror-container">code editor</label>
+</div>
+<!---->          </div>
+      </div>
+      <!-- if this is in the main-output-container, strange things happen with anchor links in chrome ¯\_(ツ)_/¯ -->
+      <div id="output-container" style="top: 327.116px;">
+        
+      <iframe id="output-iframe" title="output-iframe" name="20cbdab6-ba28-620f-6501-4046e575508a" src="./week1_files/saved_resource.html"></iframe></div>
+    </div>
+    </main>
+          <textarea readonly="" id="console" rows="5" wrap="hard" maxlength="500">--MIMIC--
+Processor loaded
+this.audioContext.state,suspended
+doResume,false</textarea>          <label style="color:transparent;" for="console">output console</label>
+</div>
+
+    
+  </div>
+  <div id="ember303" class="ember-view"><div id="mimic-footer" style="display: block;">
+  <table id="footer-table">
+    <tr>
+      <td id="footer-contact">
+        <a class="footer-link" href="mailto:mimicprojectinfo@gmail.com">Contact</a>
+      </td>
+      <td>
+        <p id="footer-copyright">© MIMIC Project 2019</p>
+      </td>
+      <td id="footer-terms">
+        <a class="footer-link" href="https://mimicproject.com/terms">Terms and Conditions</a>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div></body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://mimicproject.com/code/3eb047f5-012a-b173-358c-21a919f1e298 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="origin-trial" content="AipZcFrgMg9ylKLo57EBO0tGMBmsXqFLzwuJJP20GXbHuST7hB1MuUjHX8j3+wbFQot8LyYvaDmS1rONKHvSzwwAAAB6eyJvcmlnaW4iOiJodHRwczovL21pbWljcHJvamVjdC5jb206NDQzIiwiZmVhdHVyZSI6IlVucmVzdHJpY3RlZFNoYXJlZEFycmF5QnVmZmVyIiwiZXhwaXJ5IjoxNjM5NTI2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <title _msthash="149916" _msttexthash="13100412">模仿项目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="ember-share-db/config/environment" content="%7B%22modulePrefix%22%3A%22ember-share-db%22%2C%22environment%22%3A%22firebase%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22googleFonts%22%3A%5B%22Karla%3A200%22%2C%22Karla%3A400%22%2C%22Karla%3A500%22%2C%22Karla%3A700%22%2C%22Overpass%20Mono%3A100%22%2C%22Overpass%20Mono%3A400%22%5D%2C%22resizeServiceDefaults%22%3A%7B%22debounceTimeout%22%3A200%2C%22heightSensitive%22%3Atrue%2C%22widthSensitive%22%3Atrue%2C%22injectionFactories%22%3A%5B%22view%22%2C%22component%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-share-db%22%2C%22version%22%3A%22deployed220706.2%2Be15f69c7%22%7D%2C%22contentCollectionName%22%3A%22docs%22%2C%22redirectServerHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%22%2C%22localOrigin%22%3A%22https%3A%2F%2Fmimicproject.com%22%2C%22debugConsole%22%3Afalse%2C%22colabMode%22%3Atrue%2C%22colabWsHost%22%3A%22wss%3A%2F%2Fmimic-colab-server.herokuapp.com%2F%22%2C%22serverHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%22%2C%22wsHost%22%3A%22wss%3A%2F%2Fmimic-238710.appspot.com%22%2C%22oauthHost%22%3A%22https%3A%2F%2Fmimic-238710.appspot.com%2Foauth%22%2C%22emberTracker%22%3A%7B%22analyticsSettings%22%3A%7B%22trackingId%22%3A%22UA-139964903-1%22%7D%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22&#39;none&#39;%22%2C%22script-src%22%3A%22&#39;self&#39;%20&#39;unsafe-inline&#39;%20&#39;unsafe-eval&#39;%22%2C%22font-src%22%3A%22&#39;self&#39;%20fonts.gstatic.com%22%2C%22connect-src%22%3A%22&#39;self&#39;%20wss%3A%2F%2Fmimic-238710.appspot.com%20https%3A%2F%2Fmimic-238710.appspot.com%20wss%3A%2F%2Fmimic-colab-server.herokuapp.com%2F%22%2C%22img-src%22%3A%22&#39;self&#39;%22%2C%22report-uri%22%3A%22&#39;localhost&#39;%22%2C%22style-src%22%3A%22&#39;self&#39;%20&#39;unsafe-inline&#39;%20fonts.googleapis.com%22%2C%22frame-src%22%3A%22&#39;none&#39;%22%7D%2C%22exportApplicationGlobal%22%3Atrue%2C%22ember-websockets%22%3A%7B%22socketIO%22%3Afalse%7D%7D">
+<link href="./week2_files/css" rel="stylesheet" type="text/css" media="all">
+
+    <link integrity="" rel="stylesheet" href="./week2_files/vendor.css">
+    <link integrity="" rel="stylesheet" href="./week2_files/ember-share-db.css">
+    <meta name="author" content="Louis McCallum">
+    <meta name="description" content="MIMIC is a web platform for the artistic exploration of musical machine learning, machine listening and creative AI.">
+    <meta name="twitter:title" content="MIMIC Creative AI Platform">
+    <meta property="og:image" content="https://mimicproject.com/images/logo-animation-cropped.gif">
+    <meta property="og:description" content="MIMIC is a web platform for the artistic exploration of musical machine learning, machine listening and creative AI.">
+    <meta property="og:title" content="MIMIC Creative AI Platform">
+    <meta property="og:url" content="https://mimicproject.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="”robots”" content="index, follow">
+    
+  </head>
+  <body class="ember-application">
+    <script async="" src="./week2_files/analytics.js.下载"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-139964903-1');</script>
+
+    <script src="./week2_files/vendor.js.下载"></script>
+    <script src="./week2_files/ember-share-db.js.下载"></script>
+
+    <div id="ember-bootstrap-wormhole"></div>
+  
+
+<div class="ember-view" id="ember252"><div id="main-site-container" style="padding-left: 8%; padding-right: 8%;">
+  <div id="ember259" class="ember-view"><div id="mimic-navbar" class="limited-width-container" style="display: block;">
+<img src="./week2_files/logo-animation-cropped.gif" alt="主徽标" id="main-logo" _mstalt="7487220" style="display: none;">
+<ul id="ember260" class="nav nav-pills ember-view"><li id="ember261" class="dropdown ember-view">  <a href="https://mimicproject.com/code/3eb047f5-012a-b173-358c-21a919f1e298#" aria-expanded="false" id="ember262" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1" _msthash="87451" _msttexthash="5448781">大约</font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember264" class="dropdown ember-view">    <a href="https://mimicproject.com/code/3eb047f5-012a-b173-358c-21a919f1e298#" aria-expanded="false" id="ember265" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1" _msthash="87997" _msttexthash="6039254">探讨</font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember267" class="dropdown ember-view">    <a href="https://mimicproject.com/code/3eb047f5-012a-b173-358c-21a919f1e298#" aria-expanded="false" id="ember268" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1" _msthash="88543" _msttexthash="4215874">学习</font><span class="caret"></span></a>
+<!---->
+<!----></li><li id="ember270" class="dropdown ember-view">      <a href="https://mimicproject.com/code/3eb047f5-012a-b173-358c-21a919f1e298#" aria-expanded="false" id="ember271" class="nav-dropdown dropdown-toggle ember-view" role="button"><font _mstmutation="1" _msthash="87438" _msttexthash="13964756">我的项目</font><span class="caret"></span></a>
+<!---->
+<!----></li>
+</ul>  <div id="login-container" style="top: 20px;">
+    <div style="float:right;" class="tooltip">
+      <a id="login-button" class="navbar-btn navbar-right pull-right" data-ember-action="" data-ember-action-273="273" _msthash="204698" _msttexthash="6504056">注销</a>
+      <span class="tooltiptext" _msthash="396188" _msttexthash="15074501">登录为清月</span>
+    </div>
+  </div>
+</div>
+</div>
+  <div>
+    <div id="document-container">
+  <header>
+  <div id="code-header-container" class="limited-width-container">
+  <h4><span></span></h4>
+  <div id="doc-title-container">
+        <span id="doc-title" class="label label-default" role="button" tabindex="0" for="doc-name" data-ember-action="" data-ember-action-276="276" _msthash="130000" _msttexthash="20157774">家庭作业2 清越</span>
+    <div id="doc-controls-container">
+      <div id="render-doc-true">
+        </div>
+          <div id="transport-container">
+            <div class="tooltip col-2">
+              <button aria-label="渲染代码" id="code-play-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="11687871"><i class="glyphicon glyphicon-play"></i> 
+</button>
+              <span class="tooltiptext" _msthash="531336" _msttexthash="11687871">渲染代码</span>
+            </div>
+              <div class="tooltip">
+                  <button aria-label="显示资产" id="ember309" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="12458108"><i class="glyphicon glyphicon-file"></i> 
+</button>
+                <span class="tooltiptext" _msthash="321568" _msttexthash="28619383">添加要使用的文件</span>
+              </div>
+              <div class="tooltip">
+                <div class="dropdown">
+                  <button aria-label="添加库" id="add-library-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="7594600"><i class="glyphicon glyphicon-briefcase"></i> 
+</button>
+                 <div id="myDropdown" class="dropdown-content">
+                    <button id="ember311" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="86580" _msttexthash="33787" _msthidden="1">MMLL</font>
+</button>
+                    <button id="ember313" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="86944" _msttexthash="106041" _msthidden="1">RapidLib</font>
+</button>
+                    <button id="ember315" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87308" _msttexthash="147303" _msthidden="1">Learner.js</font>
+</button>
+                    <button id="ember317" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87672" _msttexthash="264550" _msthidden="1">Maxi Instrument</font>
+</button>
+                    <button id="ember319" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="88036" _msttexthash="185393" _msthidden="1">MIMIC Samples</font>
+</button>
+                    <button id="ember321" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="86749" _msttexthash="222196" _msthidden="1">maximilian.js</font>
+</button>
+                    <button id="ember323" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87113" _msttexthash="71721" _msthidden="1">EvoLib</font>
+</button>
+                    <button id="ember325" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87477" _msttexthash="63297" _msthidden="1">Nexus</font>
+</button>
+                    <button id="ember327" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87841" _msttexthash="158795" _msthidden="1">Processing</font>
+</button>
+                    <button id="ember329" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="88205" _msttexthash="15704" _msthidden="1">p5</font>
+</button>
+                    <button id="ember331" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="86918" _msttexthash="86957" _msthidden="1">SoundJS</font>
+</button>
+                    <button id="ember333" class="library-btn btn btn-default ember-view" type="button" _msthidden="1"><!----><font _mstmutation="1" _msthash="87282" _msttexthash="74386" _msthidden="1">Marked</font>
+</button>
+                 </div>
+                </div>
+                <span class="tooltiptext" _msthash="226538" _msttexthash="7594600">添加库</span>
+              </div>
+            <div class="tooltip">
+                <button aria-label="显示设置" id="settings-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="14035788"><i class="glyphicon glyphicon-cog"></i> 
+</button>
+              <span class="tooltiptext" _msthash="516022" _msttexthash="22329021">显示文档设置</span>
+            </div>
+            <div class="tooltip">
+                <button aria-label="显示录音" id="ember281" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="13521625"><i class="glyphicon glyphicon-record"></i> 
+</button>
+              <span class="tooltiptext" _msthash="321165" _msttexthash="13798070">录制选项</span>
+            </div>
+            <div class="tooltip col-2">
+              <div id="ember282" class="inline-view ember-view"><button aria-label="下载文档" id="ember283" class="download-button clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="12153258"><i class="glyphicon glyphicon-download-alt"></i> 
+</button>
+</div>
+              <span class="tooltiptext" _msthash="321815" _msttexthash="30278586">将项目下载为压缩</span>
+            </div>
+            <div class="tooltip col-2">
+              <button aria-label="全屏幕" id="ember284" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="7179497"><i class="glyphicon glyphicon-fullscreen"></i> 
+</button>
+              <span class="tooltiptext" _msthash="322140" _msttexthash="11028615">进入全屏</span>
+            </div>
+              <div class="tooltip col-2">
+                <button aria-label="删除文档" id="code-delete-btn" class="clear-btn transport-btn btn btn-default ember-view" type="button" _mstaria-label="12432121"><i class="glyphicon glyphicon-remove"></i> 
+</button>
+                <span class="tooltiptext" _msthash="609453" _msttexthash="12432121">删除文档</span>
+              </div>
+          </div>
+    </div>
+  </div>
+<!----><!----><!----><!---->      <div tabindex="0" id="tags" class="uncharted-tokenfield-input ember-view"><div class="uncharted-form-control">
+    <div class="uncharted-token-main-container">
+      <div class="uncharted-token-container">
+          <p id="tags-token-label" class="tokenfield-label" _msthash="296101" _msttexthash="15759302">&lt; - 输入标签</p>
+<!---->        <div class="tooltip">
+          <span class="tooltiptext" _msthash="832910" _msttexthash="12737400">输入标签</span>
+<button id="tags-add-btn" class="add-file-button btn btn-default ember-view" type="button" style="display: block;"><i class="glyphicon glyphicon-plus"></i> 
+</button>          </div>
+<!---->        </div>
+
+    </div>
+</div>
+<!----></div>
+  </div>
+
+  </header>
+  <main>
+    <div id="fullscreen">
+          <div id="ember294" class="ember-view"><div id="project-tabs" style="width: 668px;">
+  <table>
+   <tr>
+    <th>
+      <div id="ember297" class="ember-view"><div class="tab-item" id="tab0">
+<button id="ember298" class="tab-btn btn btn-default ember-view" type="button"><!---->  <font _mstmutation="1" _msthash="89050" _msttexthash="9640488">家庭作业 2</font>
+
+</button><!----></div>
+</div>
+    </th>
+<!---->    <th>
+<button aria-label="“添加”选项卡" id="ember299" class="add-file-button btn btn-default ember-view" type="button" _mstaria-label="22188946"><i class="glyphicon glyphicon-plus"></i> 
+</button>    </th>
+   </tr>
+ </table>
+</div>
+</div>
+    <div id="main-code-container">
+<!----><!---->        <div id="drag-container" style="right: 637px;">
+            <button aria-label="隐藏代码" id="ember303" class="hide-code-btn btn btn-default ember-view" type="button" _mstaria-label="13426569"><i class="glyphicon glyphicon-menu-right"></i> 
+</button>
+          <div id="drag-button"></div>
+            <div id="playback-container" style="pointer-events: auto;">
+              <!-- <p class = "side-menu-label">code</p> -->
+              <div class="tooltip">
+                <span class="tooltiptext" _msthash="871000" _msttexthash="22627696">重新运行代码</span>
+<button aria-label="重新运行代码" id="embedded-run-button" class="clear-btn btn btn-default ember-view" type="button" _mstaria-label="22627696"><i class="glyphicon glyphicon-refresh"></i> 
+</button>            </div>
+              <!-- {{ops-player
+                onSkip = (action 'skipOp')
+                onPlay = (action 'playOps')
+                onRewind = (action 'rewindOps')
+                onPause = (action 'pauseOps')
+                isPlaying = isPlayingOps
+              }} -->
+              <div class="tooltip">
+                <span class="tooltiptext" _msthash="1090362" _msttexthash="14265459">更大的字体</span>
+<button id="ember304" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-zoom-in"></i> 
+</button>              </div>
+              <div class="tooltip">
+                <span class="tooltiptext" _msthash="503230" _msttexthash="15287688">较小的字体</span>
+<button id="ember305" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-zoom-out"></i> 
+</button>              </div>
+              <div class="tooltip">
+                <span class="tooltiptext" _msthash="503633" _msttexthash="14365052">切换对比度</span>
+<button id="ember306" class="clear-btn btn btn-default ember-view" type="button"><i class="glyphicon glyphicon-text-background"></i> 
+</button>              </div>
+            </div>
+          </div>
+
+        <div id="ace-container" style="width: 668px; display: inline; visibility: visible;">
+<!----><!---->
+          <div id="ember307" class="ember-view"><textarea id="code-mirror-container" style="display: none;">
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap" style="font-size: 12pt; height: 80vh;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 49.6715px; left: 98.0824px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 3091px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 16px; left: 40px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="height: 16px; width: 16px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 45px; margin-bottom: -16px; border-right-width: 34px; min-height: 3091px; padding-right: 16px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div _msthash="157332955" _msttexthash="16211">128</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 53.0824px; top: 45.68px; height: 22.8409px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="164497593" _msttexthash="4459" style="left: 0px; width: 26px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="140352" _msttexthash="4550" style="left: 0px; width: 26px;">2</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="660929" _msttexthash="4641" style="left: 0px; width: 26px;">3</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="175543485" _msttexthash="4732" style="left: 0px; width: 26px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="179305165" _msttexthash="4823" style="left: 0px; width: 26px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span> = <span class="cm-string">"https://mimicproject.com/libs/nexusUI.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="183106703" _msttexthash="4914" style="left: 0px; width: 26px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span> = <span class="cm-string">"https://mimicproject.com/libs/maximilian.v.0.1.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="1540221" _msttexthash="5005" style="left: 0px; width: 26px;">7</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://mimicproject.com/libs/maximilian.js"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="190829353" _msttexthash="5096" style="left: 0px; width: 26px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="194750465" _msttexthash="5187" style="left: 0px; width: 26px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://fonts.googleapis.com/css?family=Staatliches"</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span><span class="cm-tag cm-bracket">/&gt;</span> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="198711435" _msttexthash="9451" style="left: 0px; width: 26px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://mimicproject.com/libs/maximilian-example.css"</span> <span class="cm-tag cm-bracket">/&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="2778237" _msttexthash="9555" style="left: 0px; width: 26px;">11</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="4374973" _msttexthash="9659" style="left: 0px; width: 26px;">12</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"title"</span><span class="cm-tag cm-bracket">&gt;</span>Maximilian.js <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="6330431" _msttexthash="9763" style="left: 0px; width: 26px;">13</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"subtitle"</span><span class="cm-tag cm-bracket">&gt;</span>This is my week2 project<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="8644613" _msttexthash="9867" style="left: 0px; width: 26px;">14</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">id</span>=<span class="cm-string">"playButton"</span><span class="cm-tag cm-bracket">&gt;</span>Please listen<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="219114155" _msttexthash="9971" style="left: 0px; width: 26px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="223314273" _msttexthash="10075" style="left: 0px; width: 26px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"oscilloscope"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="227554249" _msttexthash="10179" style="left: 0px; width: 26px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"spectrogram"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="231834083" _msttexthash="10283" style="left: 0px; width: 26px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="11317517" _msttexthash="10387" style="left: 0px; width: 26px;">19</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="14349143" _msttexthash="9542" style="left: 0px; width: 26px;">20</div><div class="CodeMirror-gutter-elt" style="left: 34px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">language</span>=<span class="cm-string">"javascript"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="244912733" _msttexthash="9646" style="left: 0px; width: 26px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="249351999" _msttexthash="9750" style="left: 0px; width: 26px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="253831123" _msttexthash="9854" style="left: 0px; width: 26px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="258350105" _msttexthash="9958" style="left: 0px; width: 26px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">maxi</span> <span class="cm-operator">=</span> <span class="cm-variable">maximilian</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="262908945" _msttexthash="10062" style="left: 0px; width: 26px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">audio</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiAudio</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="267507643" _msttexthash="10166" style="left: 0px; width: 26px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">myOsc</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiOsc</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="272146199" _msttexthash="10270" style="left: 0px; width: 26px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">peng</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiSample</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="276824613" _msttexthash="10374" style="left: 0px; width: 26px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">tiao</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiSample</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="281542885" _msttexthash="10478" style="left: 0px; width: 26px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">daqi</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiSample</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="286301015" _msttexthash="9633" style="left: 0px; width: 26px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">danqiao</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiSample</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="291099003" _msttexthash="9737" style="left: 0px; width: 26px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">myClock</span><span class="cm-operator">=</span><span class="cm-keyword">new</span> <span class="cm-variable">maxi</span>.<span class="cm-property">maxiClock</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="295936849" _msttexthash="9841" style="left: 0px; width: 26px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="300814553" _msttexthash="9945" style="left: 0px; width: 26px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">audio</span>.<span class="cm-property">init</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="305732115" _msttexthash="10049" style="left: 0px; width: 26px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">audio</span>.<span class="cm-property">loadSample</span>(<span class="cm-string">'danqiao.wav'</span>,<span class="cm-variable">danqiao</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="310689535" _msttexthash="10153" style="left: 0px; width: 26px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">audio</span>.<span class="cm-property">loadSample</span>(<span class="cm-string">'tantiao.wav'</span>,<span class="cm-variable">tiao</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="315686813" _msttexthash="10257" style="left: 0px; width: 26px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">audio</span>.<span class="cm-property">loadSample</span>(<span class="cm-string">'Daqiao.wav'</span>,<span class="cm-variable">daqi</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="320723949" _msttexthash="10361" style="left: 0px; width: 26px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">audio</span>.<span class="cm-property">loadSample</span>(<span class="cm-string">'peng.wav'</span>,<span class="cm-variable">peng</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -45px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msthash="325800943" _msttexthash="10465" style="left: 0px; width: 26px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 3091px;"></div><div class="CodeMirror-gutters" style="height: 3125px; left: 7.62939e-06px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div><label style="color:transparent;" for="code-mirror-container" _msthash="250289" _msttexthash="16780257">代码编辑器</label>
+</div>
+<!---->          </div>
+      </div>
+      <!-- if this is in the main-output-container, strange things happen with anchor links in chrome ¯\_(ツ)_/¯ -->
+      <div id="output-container" style="top: 211.662px;">
+        
+      <iframe id="output-iframe" title="output-iframe" name="3eb047f5-012a-b173-358c-21a919f1e298" style="pointer-events: auto;" src="./week2_files/saved_resource.html"></iframe></div>
+    </div>
+    </main>
+          <textarea readonly="" id="console" rows="5" wrap="hard" maxlength="500">--MIMIC--
+maximilian v2.0.1: Mon Dec 05 2022 22:39:31 GMT+0000 (格林尼治标准时间)
+❌ -- [ERROR] -- ❌ -- ⚠️ Uncaught SyntaxError: Identifier 'maxi' has already been declared
+❌ -- [ERROR] -- ❌ -- ⚠️ Uncaught SyntaxError: Unexpected end of input</textarea>          <label style="color:transparent;" for="console" _msthash="587288" _msttexthash="14320800">输出控制台</label>
+</div>
+
+    
+  </div>
+  <div id="ember308" class="ember-view"><div id="mimic-footer" style="display: block;">
+  <table id="footer-table">
+    <tr>
+      <td id="footer-contact">
+        <a class="footer-link" href="mailto:mimicprojectinfo@gmail.com" _msthash="254215" _msttexthash="6317012">联系</a>
+      </td>
+      <td>
+        <p id="footer-copyright" _msthash="319384" _msttexthash="14671059">© 模仿项目2019</p>
+      </td>
+      <td id="footer-terms">
+        <a class="footer-link" href="https://mimicproject.com/terms" _msthash="204243" _msttexthash="13932477">条款与条件</a>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div></body></html>
